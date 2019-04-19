@@ -30,13 +30,13 @@ class patti:
     def show(self):
         global i
         if (self.color=="Diamond"):
-            img=PhotoImage(file="images/diamond.gif")
+            img=PhotoImage(file="diamond.gif")
         elif (self.color=="Spade"):
-            img=PhotoImage(file="images/spade.gif")
+            img=PhotoImage(file="spade.gif")
         elif (self.color=="Hearts"):
-            img=PhotoImage(file="images/heart.gif")
+            img=PhotoImage(file="heart.gif")
         else:
-            img=PhotoImage(file="images/club.gif")
+            img=PhotoImage(file="club.gif")
 
         if(self.num==11):
             no="J"
@@ -65,14 +65,14 @@ class patti:
 
     def comshow(self):
         global k
-        if (self.color=="images/Diamond"):
-            img=PhotoImage(file="images/diamond.gif")
+        if (self.color=="Diamond"):
+            img=PhotoImage(file="diamond.gif")
         elif (self.color=="Spade"):
-            img=PhotoImage(file="images/spade.gif")
+            img=PhotoImage(file="spade.gif")
         elif (self.color=="Hearts"):
-            img=PhotoImage(file="images/heart.gif")
+            img=PhotoImage(file="heart.gif")
         else:
-            img=PhotoImage(file="images/club.gif")
+            img=PhotoImage(file="club.gif")
 
         if(self.num==11):
             no="J"
@@ -105,7 +105,7 @@ class patti:
         f1 = Frame(f, bg="white")
         f1.place(relx=0.55 + j, rely=0.2, relheight=0.3, relwidth=0.12)
 
-        photo=PhotoImage(file="images/card.gif")
+        photo=PhotoImage(file="card.gif")
         l5=Label(f1,image=photo)
         l5.image=photo
         l5.place(relwidth=1,relheight=1)
